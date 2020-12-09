@@ -2,13 +2,14 @@
 
 #include "Human.hpp"
 
+
 #include <list>
 #include <vector>
 
 std::vector< char > foo(std::list< Human >& people)
 {
-   vector< char > likesAnimals;
-    list< Human >::reverse_iterator it;
+   std::vector< char > likesAnimals;
+    std::list< Human >::reverse_iterator it;
     for (it = people.rbegin(); it != people.rend(); it++)
     {
         it->birthday();
